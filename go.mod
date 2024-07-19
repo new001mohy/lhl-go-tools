@@ -1,4 +1,4 @@
-module lhl-go-tools
+module github.com/new001mohy/lhl-go-tools
 
 go 1.22.4
 
