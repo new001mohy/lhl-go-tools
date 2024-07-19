@@ -2,8 +2,8 @@ package response
 
 import (
 	"errors"
+	lhlweberr "github.com/new001mohy/lhl-go-tools/web/error"
 	"github.com/zeromicro/go-zero/rest/httpx"
-	lhlweberr "lhl-go-tools/web/error"
 	"net/http"
 )
 
