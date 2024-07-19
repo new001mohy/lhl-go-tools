@@ -8,12 +8,12 @@ import (
 )
 
 type Body struct {
-	Code    int         `json:"code"`
-	Message string      `json:"message"`
-	Data    interface{} `json:"data"`
+	Data    any    `json:"data"`
+	Code    int    `json:"code"`
+	Message string `json:"message"`
 }
 
-func Response(w http.ResponseWriter, response interface{}, err error) {
+func Response(w http.ResponseWriter, response any, err error) {
 	var body Body
 	if err != nil {
 		if errors.Is(err, lhlweberr.ErrSystemError{}) {
